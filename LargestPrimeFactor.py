@@ -1,23 +1,26 @@
 #x = 600851475143
-x = 20
-myList = []
-myList2 = []
-count = 1
 
-while count <= x:
-    if x % count == 0:
-        myList.append(count)
+# 1. se toma el numero y se encuentran sus factores primos
+x = int(input('Ingrese el numero: '))
+lista_divisores = []
+for i in range(2,x):
+    if x % i == 0:
+        lista_divisores.append(i)
     else:
         None
-    count = count + 1
 
-print(myList)
 
-for y in myList:
-    for num in range(1,y):
-        if num % y != 0:
-            myList2.append(y)
+
+print(lista_divisores)
+for i in range(2,x):
+    for j in lista_divisores:
+        if (j % i == 0) and (j != i):
+            lista_divisores.remove(j)
         else:
             None
+print(lista_divisores)
 
-print(myList2)
+Large_prime = max(lista_divisores)
+print(Large_prime)
+
+

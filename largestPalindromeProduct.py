@@ -1,6 +1,9 @@
 # @Author: Diego Sarceno
 # 11.07.2020
 
+# Problem 4 of Project Euler
+
+
 '''
 Programa que encuentra el numero palindromico
 mas grande generado por dos numeros de 3 digitos

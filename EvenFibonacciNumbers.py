@@ -1,3 +1,9 @@
+# @Author: Diego Sarceno
+# 2019
+
+# Problem 2 of Project Euler
+
+
 x = []
 
 def fib(n):
@@ -21,4 +27,3 @@ for y in x:
         None
 
 print(myList)
-

@@ -1,3 +1,8 @@
+# @Author: Diego Sarceno
+# 28.06.2020
+
+# Problem 3 of Project Euler
+
 #x = 600851475143
 
 # 1. se toma el numero y se encuentran sus factores primos
@@ -22,5 +27,3 @@ print(lista_divisores)
 
 Large_prime = max(lista_divisores)
 print(Large_prime)
-
-

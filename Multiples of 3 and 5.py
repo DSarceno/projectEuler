@@ -1,3 +1,8 @@
+# @Author: Diego Sarceno
+# 2019
+
+# Problem 1 of Project Euler
+
 x = 0
 count = 1
 while count <=1000:

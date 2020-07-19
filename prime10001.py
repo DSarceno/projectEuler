@@ -9,19 +9,16 @@ se almacenaran en una lista hasta que el numero de la lista sea
 de 10001
 '''
 
-from math import *
-count = 1
-k = 1
-Lista_n = [k + i for i in range(1,1000000)]
+# se toma un contador iniciando en 2
+count = 2
 
-while len(Lista_n) <= 10001:
-    for i in Lista_n:
-        for j in Lista_n:
-            if (j % i == 0) and (j != i):
-                Lista_n.remove(j)
-            else:
-                continue
-    count += 1
-
-# se imprime el 10001 numero primo
-print(Lista_n[10000])
+for i in range(1,200000,2): # paso 2 para evitar todos los numeros pares
+    k = 1
+    while k < i:
+        k += 2
+        if (i % k == 0):
+            break
+        if (k + 2 == i):
+            count += 1
+        if count == 10001:
+            print(i)

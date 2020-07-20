@@ -6,7 +6,7 @@
 #x = 600851475143
 
 # 1. se toma el numero y se encuentran sus factores primos
-x = int(input('Ingrese el numero: '))
+x = 600851475143
 lista_divisores = []
 for i in range(2,x):
     if x % i == 0:

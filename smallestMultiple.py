@@ -9,17 +9,17 @@ divisible entre todos del 1 al 20
 '''
 # creamos una funcion
 def div120(n):
-    for i in range(1,21):
+    for i in range(3,21):
         if (n % i != 0):
             return False
     return True
 
 # tomamos todos los numeros hasta encontrar el menor que cumpla
-num = 1
+num = 20
 while True:
     if div120(num):
         break
-    num += 1
+    num += 2
 
 # El nuemro que pare el loop es el menor divisible entre 1 y 20
 # se imprime

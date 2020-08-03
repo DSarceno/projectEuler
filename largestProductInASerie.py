@@ -12,7 +12,7 @@ n = 7316717653133062491922511967442657474235534919493496983520312774506326239578
 
 package = 13
 
-# se divide el 'n' en intervalos de 13
+# se divide el 'n' en intervalos de 13 digitos 
 mayor = 0
 for i in range(1000 - 13 + 1):
     x = str(n)[i:i + package]

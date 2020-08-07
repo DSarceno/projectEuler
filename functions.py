@@ -1,3 +1,8 @@
+# @Author: Diego Sarceno
+# 28.06.2020
+# Update: 3.08.2020
+
+
 import math as m
 
 '''Archivo con funcines utiles'''
@@ -14,3 +19,19 @@ def prime(n):
         if (n % i == 0) and (i != n):
             return(None)
     return(n)
+
+
+def n_triang(n):
+    '''Esta funcion toma un numero y encuentra su numero triangular asociado,
+    i.e. n = 1 -> 1
+    n = 2 -> 3
+    asi sucesivamente'''
+    return n*(n + 1)/2
+
+
+def digSum(n):
+    '''se convierte al numero en un str y se iteran sus digitos sumandolos'''
+    suma = 0
+    for i in range(len(str(n))):
+        suma += int(str(n)[i])
+    return suma

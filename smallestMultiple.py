@@ -7,20 +7,22 @@
 Tomamos cada numero hasta encontrar el minimo
 divisible entre todos del 1 al 20
 '''
-# creamos una funcion
-def div120(n):
-    for i in range(3,21):
+
+import math as m
+
+# esto porque el numero o es ese o es menor al producto de todos sus divisores
+cota_i = 230000000
+
+def div(n):
+    for i in range(11,21):
         if (n % i != 0):
             return False
     return True
 
-# tomamos todos los numeros hasta encontrar el menor que cumpla
-num = 20
+count = cota_i
 while True:
-    if div120(num):
+    if div(count):
         break
-    num += 2
+    count += 2
 
-# El nuemro que pare el loop es el menor divisible entre 1 y 20
-# se imprime
-print(num)
+print(count)

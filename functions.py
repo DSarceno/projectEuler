@@ -46,3 +46,12 @@ def digSum(n):
     for i in range(len(str(n))):
         suma += int(str(n)[i])
     return suma
+
+# determina su numero es triangular
+def TriangularQ(numero):
+    '''esta funcion recibe un numero y determina si es triangular o no'''
+    a = (1/2) * (-1 + (1 + 8 * numero) ** (1/2))
+    if a - int(a) == 0:
+        return True
+    else:
+        return False

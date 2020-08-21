@@ -10,7 +10,7 @@ de las letras que lo conforman y lo multiplica por su posicion en la lista
 ordenada alfabeticamente.'''
 
 # se abre el archivo
-f = openn('p022_names.txt','r')
+f = open('p022_names.txt','r')
 
 # se agregan a una lista y se ordenan alfabeticamente
 nombres = sorted([i[1:len(i) - 1] for i in f.readline().split(",")])

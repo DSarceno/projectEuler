@@ -48,10 +48,35 @@ def digSum(n):
     return suma
 
 # determina su numero es triangular
-def TriangularQ(numero):
+def triangularN(number):
     '''esta funcion recibe un numero y determina si es triangular o no'''
-    a = (1/2) * (-1 + (1 + 8 * numero) ** (1/2))
-    if a - int(a) == 0:
+    a = (-1 + (1 + 8 * number) ** (1/2)) % 2
+    if a == 0:
         return True
     else:
         return False
+
+# numero pentagonal
+def pentagonalN(number):
+    '''recibe un numero y determina si es pentagonal'''
+    n = (1 + (24*number + 1)**(1/2)) % 6
+    if n == 0:
+        return True
+    else:
+        return False
+
+# numero hexagonal
+def hexagonalN(number):
+    '''recibe un numero y determina si es hexagonal'''
+    n = (1 + (8*number + 1)**(1/2)) % 4
+    if n == 0:
+        return True
+    else:
+        return False
+
+def factors(n):
+    nDivisors = 1
+    for i in range(1,m.ceil(n/2)):
+        if n % i == 0:
+            nDivisors += 1
+    return nDivisors

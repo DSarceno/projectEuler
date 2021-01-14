@@ -44,7 +44,7 @@ p = 600851475143.
 np = 0
 i = 2
 
-DO I = 2, NINT(p/2)
+DO i = 2, NINT(p/2)
   IF ((MOD(INT(p,8),i) == 0) .AND. (prime(REAL(i,4)) .eqv. .TRUE.) .AND. (i >= np)) THEN
     np = i
   END IF

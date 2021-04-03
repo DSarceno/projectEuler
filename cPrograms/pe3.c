@@ -32,7 +32,7 @@ int main( void ){
 }
 
 int prime(double x){
-  int bool;
+  int yn;
   int factors;
   double ceil(double x);
   double sqrt(double x);
@@ -44,9 +44,9 @@ int prime(double x){
   }// end for
 
   if (factors == 0){
-    bool = 1;
+    yn = 1;
   }else{
-    bool = 0;
+    yn = 0;
   }
   return bool;
 }// end function

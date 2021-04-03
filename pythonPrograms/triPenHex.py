@@ -21,6 +21,6 @@ while True:
     if fun.pentagonalN(tr) and fun.hexagonalN(tr):
         print(tr)
         count += 1
-        if count == 3:
+        if count == 5:
             break
     num += 1

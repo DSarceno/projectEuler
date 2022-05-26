@@ -80,3 +80,10 @@ def factors(n):
         if n % i == 0:
             nDivisors += 1
     return nDivisors
+
+def d(n):
+    factorSum = 0
+    for i in range(1,m.ceil(n/2) + 1):
+        if n % i == 0 & n != i:
+            factorSum += i
+    return factorSum

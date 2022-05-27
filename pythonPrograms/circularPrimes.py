@@ -2,7 +2,7 @@
 #    circularPrimes.py
 #    Diego Sarceño (dsarceno68@gmail.com)
 
-#    problem 21 project euler
+#    problem 35 project euler
 
 #    Codificación del texto: UTF8
 #    Compiladores probados: Python (Ubuntu 20.04 Linux) 3.8.5
@@ -33,3 +33,6 @@ for p in primes:
     for circ in circle(p):
         if fun.prime(int(circ)) == int(circ) & counter == len(circle(p)):
             counter += 1
+'''
+        NO COMPLETADO MAMAHUEVO
+'''

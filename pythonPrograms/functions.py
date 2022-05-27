@@ -87,3 +87,12 @@ def d(n):
         if n % i == 0 & n != i:
             factorSum += i
     return factorSum
+
+
+
+def decimal_to_binary(n):
+    binary = ''
+    while n > 0:
+        binary += str(n % 2)
+        n = int(n/2)
+    return binary[::-1]
